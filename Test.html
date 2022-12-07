@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Style Properties</title>
+    <style>
+        body {
+            letter-spacing: 2px;
+        }
+
+        h3 {
+            color: seagreen;
+            font-size: xx-large;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+
+        p {
+            color: rgb(0, 0, 0);
+            font-size: medium;
+            line-height: larger;
+            letter-spacing: 2px;
+
+        }
+
+        a:link {
+            color: rgb(255, 0, 0);
+            text-decoration: underline;
+
+        }
+
+        a:hover {
+            color: black;
+            background-color: coral;
+        }
+
+        a:active {
+            background-color: rgb(255, 255, 255);
+        }
+
+        table {
+            text-align: center;
+            border: 5px solid black;
+            box-shadow: 10px;
+            text-transform: calc(25%, 25%);
+            margin-top: 40px;
+
+
+        }
+
+        td,
+        th {
+            background-color: rgb(255, 255, 173);
+            border: 3px solid rgb(0, 0, 0);
+            padding: 40px;
+            margin: 0;
+        }
+
+        li {
+            float: left;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Selectors</h3>
+    <p>Selectors used to point the HTML elements to be styled in a style sheet.
+        CSS selector can be clasified to five categories, namely:
+        Simple selectors (Ex: Id,class), Combinator Selectors
+        (i.e, combinations of more than simple selector using combinators
+        like Descendant Selector (space), Child Selector (>), Adjacent Sibling Selector (+),
+        General Sibling Selector (~)),
+        Pseudo Class Selectors (Ex: Element:Hover, Element:Visited, <a
+            href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank"> etc </a> ),
+        Pseudo Element Selectors (Ex: Element::First-line, Element::before,
+        <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank"> etc </a>),
+        Attriute Selectors (elements with specific attributes or Values <a
+            href="https://www.w3schools.com/css/css_attribute_selectors.asp" target="_blank"> Example</a>)
+    </p>
+
+    <h3>Property</h3>
+    <p>Properties in Css decides how an html Element will be styled in the webpage. Propery should be defined with a
+        value.</p>
+
+
+    <table class="one">
+        <thead>
+            <tr>
+                <th>Elements</th>
+                <th colspan="5">Styling Property</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Anchor</td>
+                <td>Image</td>
+                <td>Paragraph</td>
+                <td>H1-H6</td>
+                <td>List</td>
+                <td>Table</td>
+            </tr>
+            <tr>
+                <td>
+
+                    Color
+                    Text Decoration
+                    Background
+                    text alligment
+                    Font
+                    Box Styling
+                </td>
+                <td>
+                        Width
+                        Height
+                        Background
+                        Filter
+                        Box Shadow
+                        Display
+                        Float</ul>
+                        Box Styling
+                        Text Decoration
+
+
+                </td>
+                <td>
+
+                    Text Align
+                    Text Decoration
+                    Text Transform
+                    Text Indent
+                    Letter Spacing
+                    Word Spacing
+                    White Space
+                    Box Styling
+                    Color
+                    Line height
+                    Line Font
+                    Line Background
+
+                </td>
+                <td>
+
+                    list-style
+                    Background
+                    Display
+                    Float
+                    Box Styling
+                    Color
+                    Text style
+
+
+                </td>
+                <td>
+                    <li style="list-style:none">
+                        list-style
+                        Background
+                        Display
+                        Float
+                        Box Styling
+                        Color
+                        Text style
+
+                </td>
+                <td>
+
+                    Width
+                    Height
+                    Background
+                    Text Align
+                    Table Layout
+                    Box Styling
+
+
+                </td>
+            </tr>
+            <!-- <tr>
+                <td>Anchor (Link)</td>
+                <td>
+
+                    <li style="list-style:none">
+                        <ul>Color</ul>
+                        <ul>Text Decoration</ul>
+                        <ul>Background</ul>
+                        <ul>text alligment</ul>
+                        <ul>Font</ul>
+                        <ul>Box Styling</ul>
+                    
+                </td> -->
+
+            <!-- <tr>
+                <td>Image</td>
+                <td>
+                    <li style="list-style:none">
+                        <ul>Width</ul>
+                        <ul>Height</ul>
+                        <ul>Background</ul>
+                        <ul>Filter</ul>
+                        <ul>Box Shadow</ul>
+                        <ul>Display</ul>
+                        <ul>Float</ul>
+                        <ul>Box Styling</ul>
+                        <ul>Text Decoration</ul>
+
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td>List</td>
+                <td>
+
+                    <li style="list-style:none">
+                        <ul>list-style</ul>
+                        <ul>Background</ul>
+                        <ul>Display</ul>
+                        <ul>Float</ul>
+                        <ul>Box Styling</ul>
+                        <ul>Color</ul>
+                        <ul>Text style</ul>
+
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td>Paragraph</td>
+                <td>
+
+                    <li style="list-style:none">
+                        <ul>Text Align</ul>
+                        <ul>Text Decoration</ul>
+                        <ul>Text Transform</ul>
+                        <ul>Text Indent</ul>
+                        <ul>Letter Spacing</ul>
+                        <ul>Word Spacing</ul>
+                        <ul>White Space</ul>
+                        <ul>Box Styling</ul>
+                        <ul>Color</ul>
+                        <ul>Line height</ul>
+                        <ul>Line Font</ul>
+                        <ul>Line Background</ul>
+
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td>H1 - H6</td>
+                <td>
+
+                    <li style="list-style:none">
+                        <ul>Text Align</ul>
+                        <ul>Text Decoration</ul>
+                        <ul>Text Transform</ul>
+                        <ul>Text Indent</ul>
+                        <ul>Letter Spacing</ul>
+                        <ul>Word Spacing</ul>
+                        <ul>White Space</ul>
+                        <ul>Box Styling</ul>
+                        <ul>Color</ul>
+                        <ul>Line height</ul>
+                        <ul>Line Font</ul>
+                        <ul>Line Background</ul>
+
+                    </li>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Table</td>
+                <td>
+
+                    <li style="list-style:none">
+                        <ul>Width</ul>
+                        <ul>Height</ul>
+                        <ul>Background</ul>
+                        <ul>Text Align</ul>
+                        <ul>Table Layout</ul>
+                        <ul>Box Styling</ul>
+
+                    </li>
+                </td>
+            </tr> -->
+
+        </tbody>
+
+    </table>
+
+    <br>
+
+    <table class="Two">
+
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th> Values</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Animations</td>
+                <td>
+                    <li style="list-style:none">
+                        <ul>Animation</ul>
+                        <ul>Animation-Delay</ul>
+                        <ul>Animation-Direction</ul>
+                        <ul>Animation-Duration</ul>
+                        <ul>Animation-Fill-Mode</ul>
+                        <ul>Animation-Iteration-Count</ul>
+                        <ul>Animation-Name</ul>
+                        <ul>Animation-Play-State</ul>
+                        <ul>Animation-Timing-Function</ul>
+                    </li>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Background</td>
+                <td>
+                    <li style="list-style:none">
+                        <ul>Background</ul>
+                        <ul>Backface-Visibility</ul>
+                        <ul>Background-Attachment</ul>
+                        <ul>Background-Clip</ul>
+                        <ul>Background-Color</ul>
+                        <ul>Background-Image</ul>
+                        <ul>Background-Origin</ul>
+                        <ul>Background-Position</ul>
+                        <ul>Background-Repeat</ul>
+                        <ul>Background-Size</ul>
+                    </li>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>Box Model - Styling</td>
+                <td>
+                    <li style="list-style:none">
+                        <ul>Box-Shadow</ul>
+                        <ul>Box-Sizing</ul>
+                        <ul>Border</ul>
+                        <ul>Padding</ul>
+                        <ul>Margin</ul>
+                        <ul>Outline</ul>
+                        <ul>Max-Height</ul>
+                        <ul>Max-Width</ul>
+                        <ul>Min-Height</ul>
+                        <ul>Min-Width</ul>
+
+
+                    </li>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Box Model - alligment</td>
+                <td>
+                    <li style="list-style:none">
+                        <ul>Display</ul>
+                        <ul>Float</ul>
+                        <ul>Display</ul>
+                        <ul>Position</ul>
+                        <ul>Z-Index</ul>
+                    </li>
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td>Flex</td>
+                <td>
+                    <li style="list-style:none">
+                        <ul>Align-Content</ul>
+                        <ul>Align-Items</ul>
+                        <ul>Align-Self</ul>
+                        <ul>Flex</ul>
+                        <ul>Flex-Basis</ul>
+                        <ul>Flex-Direction</ul>
+                        <ul>Flex-Flow</ul>
+                        <ul>Flex-Grow</ul>
+                        <ul>Flex-Shrink</ul>
+                        <ul>Flex-Wrap</ul>
+                        <ul>Justify-Content</ul>
+                        <ul>Order</ul>
+
+                    </li>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Font</td>
+                <td>
+                    <li style="list-style:none">
+                        <ul>Font</ul>
+                        <ul>Font-Family</ul>
+                        <ul>Font-Size</ul>
+                        <ul>Font-Size-Adjust</ul>
+                        <ul>Font-Stretch</ul>
+                        <ul>Font-Style</ul>
+                        <ul>Font-Variant</ul>
+                        <ul>Font-Weight</ul>
+
+                    </li>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Grid</td>
+                <td>
+                    <li style="list-style:none">
+                        <ul>Grid</ul>
+                        <ul>Grid-Area</ul>
+                        <ul>Grid-Auto-Columns</ul>
+                        <ul>Grid-Auto-Flow</ul>
+                        <ul>Grid-Auto-Rows</ul>
+                        <ul>Grid-Column</ul>
+                        <ul>Grid-Column-End</ul>
+                        <ul>Grid-Column-Gap</ul>
+                        <ul>Grid-Column-Start</ul>
+                        <ul>Grid-Gap</ul>
+                        <ul>Grid-Row</ul>
+                        <ul>Grid-Row-End</ul>
+                        <ul>Grid-Row-Gap</ul>
+                        <ul>Grid-Row-Start</ul>
+                        <ul>Grid-Template-Areas</ul>
+                        <ul>Grid-Template-Columns</ul>
+                        <ul>Grid-Template-Rows</ul>
+                    </li>
+                </td>
+            </tr>
+
+            <tr>
+                <td>List</td>
+                <td>
+                    <li style="list-style:none">
+                        <ul>List-Style</ul>
+                        <ul>List-Style-Image</ul>
+                        <ul>List-Style-Position</ul>
+                        <ul>List-Style-Type</ul>
+
+                    </li>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td>Mouse Pointer</td>
+                <td>
+                    <li style="list-style:none">
+                        <ul>Cursor</ul>
+                    </li>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Overflow</td>
+                <td>
+                    <li style="list-style:none"
+                    >
+                        <ul>Overflow-X</ul>
+                        <ul>Overflow-Y</ul>
+                        <ul>Text-Overflow</ul>
+
+                    </li>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Random properties</td>
+                <td>
+                    <li style="list-style:none">
+                        <ul>Appearence</ul>
+                        <ul>Aspect-Ratio</ul>
+                        <ul>Backdrop -Filter</ul>
+                        <ul>Backface-Visibility</ul>
+                        <ul>Block-Size</ul>
+                        <ul>Inline-Size</ul>
+                        <ul>Opacity</ul>
+                        <ul>Visibility</ul>
+                        <ul>Page-Break-After</ul>
+                        <ul>Page-Break-Before</ul>
+                        <ul>Page-Break-Inside</ul>
+                        <ul>Perspective</ul>
+                        <ul>Perspective-Origin</ul>
+                        <ul>Quotes</ul>
+                        <ul>Resize</ul>
+                        <ul>Vertical-Align</ul>
+                        <ul>White-Space</ul>
+                        <ul>Width</ul>
+                        <ul>Word-Break</ul>
+                        <ul>Word-Spacing</ul>
+                        <ul>Word-Wrap</ul>
+                        <ul>Letter-Spacing</ul>
+                        <ul>Line-Height</ul>
+                        <ul>Direction</ul>
+
+
+
+                    </li>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Text</td>
+                <td>
+                    <li style="list-style:none">
+                        <ul>Text-Align</ul>
+                        <ul>Text-Align-Last</ul>
+                        <ul>Text-Decoration</ul>
+                        <ul>Text-Decoration-Color</ul>
+                        <ul>Text-Decoration-Line</ul>
+                        <ul>Text-Decoration-Style</ul>
+                        <ul>Text-Indent</ul>
+                        <ul>Text-Justify</ul>
+                        <ul>Text-Overflow</ul>
+                        <ul>Text-Transform</ul>
+
+
+                    </li>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Transform</td>
+                <td>
+                    <li style="list-style:none">
+                        <ul>Text-Transform</ul>
+                        <ul>Transform</ul>
+                        <ul>Transform-Origin</ul>
+                        <ul>Transform-Style</ul>
+
+                    </li>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Transition</td>
+                <td>
+                    <li style="list-style:none">
+                        <ul>Transition</ul>
+                        <ul>Transition-Delay</ul>
+                        <ul>Transition-Duration</ul>
+                        <ul>Transition-Property</ul>
+                        <ul>Transition-Timing-Function</ul>
+
+                    </li>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</body>
+
+</html>

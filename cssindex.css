@@ -1,0 +1,83 @@
+.Cover{
+
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+    "C1 C2"
+    "C3 C4"
+    "C5 C6";
+    margin: 100px auto 100px auto;
+    grid-gap: 20px;
+  
+
+}
+
+.Cover > div{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+
+
+.Cover a{
+    text-decoration: none;
+    color: black;
+    padding: 40px;
+    align-self: center;
+    max-width: 40px;
+    min-width: 40px;
+    text-align: center;
+    font-weight:500;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.C1 > a{
+    background-color: rgb(220, 238, 214);
+    
+}
+
+.C2 > a{
+    background-color: rgb(120, 191, 253);
+}
+.C3 > a{
+    background-color: rgb(249, 172, 238);
+}
+.C4 > a{
+    background-color: rgb(188, 253, 213);
+}
+.C5 > a{
+    background-color: rgb(251, 255, 224);
+}
+.C6 > a{
+    background-color: rgb(240, 225, 255);
+}
+
+.cover{
+
+    animation: bg-spin 3s linear infinite;
+
+    @keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+}
+
+@property --border-angle {
+syntax: "<angle>";
+inherits: true;
+initial-value: 0turn;
+}
+
+@media only screen and (max-width: 600px) {
+    .Cover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+  }
